@@ -31,9 +31,9 @@ def make_query(text):
         else:
             result.append(0)
     return result
-    
 
-    
+
+
 # initialize the flask app
 app = Flask(__name__)
 knn = joblib.load("knn.pickle")
@@ -46,6 +46,10 @@ def index():
 @app.route('/registration')
 def registration():
     return render_template("registration.html")
+
+@app.route('/user-registration')
+def Userregistration():
+    return render_template("userRegistration.html")
 
 @app.route('/review')
 def review():
