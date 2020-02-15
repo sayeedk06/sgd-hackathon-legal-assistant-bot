@@ -67,7 +67,10 @@ def webhook():
     query = np.array(query).reshape(1,-1)
     _ , indices = knn.kneighbors(query)
     top_match = indices[0][0]
-    result = make_description(top_match)
+    second = indices[0][1]
+    third = indices[0][2]
+    result = "1. "+ make_description(top_match) + "  2. " + make_description(second) +"  3. " + make_description(third)
+    result = result + "Would you like us to connect you to these lawyers?"
     return make_response(jsonify({'fulfillmentText': result }))
 # run the app
 if __name__ == '__main__':
