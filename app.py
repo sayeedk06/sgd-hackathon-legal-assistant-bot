@@ -1,4 +1,4 @@
-from flask import Flask, request, make_response, jsonify
+from flask import Flask, request, make_response, jsonify, render_template
 import json
 from sklearn.externals import joblib
 import numpy as np
@@ -42,6 +42,16 @@ knn = joblib.load("knn.pickle")
 @app.route('/')
 def index():
     return 'Hello World!'
+
+@app.route('/registration')
+def registration():
+    return render_template("registration.html")
+
+@app.route('/review')
+def review():
+    return render_template('review.html')
+
+
 # create a route for webhook
 @app.route('/webhook', methods=['GET', 'POST'])
 def webhook():
