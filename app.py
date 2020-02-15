@@ -33,15 +33,16 @@ def make_query(text):
     return result
 
 
-
+Logo_folder = os.path.join('static', 'logo_folder')
 # initialize the flask app
 app = Flask(__name__)
 knn = joblib.load("knn.pickle")
-
+app.config['UPLOAD_FOLDER'] = Logo_folder
 # default route
 @app.route('/')
 def index():
-    return 'Hello World!'
+    full_filename = os.path.join(app.config['UPLOAD_FOLDER'], 'hello.png')
+    return render_template("home.html", user_image=full_filename)
 
 @app.route('/registration')
 def registration():
