@@ -18,10 +18,10 @@ selected_features = ['Access to Information','Citizenship',
 
 def make_description(lawyer_id):
     row = data.iloc[lawyer_id]
-    name = row["Name"]
+    name = str(row["Name"])
     org = str(row["Organisation"])
     contact = str(row['Contact'])
-    return name + '\n' + org + '\n' + contact
+    return str(name + '.' + org + '.' + contact)
 
 def make_query(text):
     result = []
@@ -71,6 +71,7 @@ def webhook():
     second = indices[0][1]
     third = indices[0][2]
     result = "1. "+ make_description(top_match) + "  2. " + make_description(second) +"  3. " + make_description(third)
+    #result = "1. "+ result1 + "  2.  " + result2 + "  3.  " + result3
     result = result + "Would you like us to connect you to these lawyers?"
     return make_response(jsonify({'fulfillmentText': result }))
 # run the app
