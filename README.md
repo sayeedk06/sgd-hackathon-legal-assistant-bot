@@ -37,7 +37,7 @@ The conversational interface of the product was built with Google Dialogflow and
 
 # Final Demo Slides
 
-https://www.slideshare.net/mayeeshatahsin/banglalink-sgd-hackathon-final-demo
+[link](https://www.slideshare.net/mayeeshatahsin/banglalink-sgd-hackathon-final-demo) 
 
 
 
