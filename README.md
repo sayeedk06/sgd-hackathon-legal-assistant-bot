@@ -25,7 +25,7 @@ The conversational interface of the product was built with Google Dialogflow and
 
 ## Dialogflow web demo 
 
-![](images/web demo.gif )
+![](images/web.gif)
 
 # Team
 
