@@ -39,6 +39,12 @@ The conversational interface of the product was built with Google Dialogflow and
 
 [link](https://www.slideshare.net/mayeeshatahsin/banglalink-sgd-hackathon-final-demo) 
 
+# Acknowledgements
+
+* Arshi Siddiqui Promiti : Idea contribution and problem understanding.
+* Nova Ahmed : For overview of women related support organizations.
+* Banglalink Mentors.
+
 
 
 
