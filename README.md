@@ -47,5 +47,5 @@ The conversational interface of the product was built with Google Dialogflow and
 
 
 
-[](images/banglalink.png)
+![](images/banglalink.png)
 
