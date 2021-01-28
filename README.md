@@ -1,6 +1,6 @@
 ![](images/logo.jpeg)
 
-# Banglalink SGD Hackathon Winner Legal Assistant Chatbot
+# Banglalink SDG Hackathon Winner Legal Assistant Chatbot
 
 Noyona is an end to end product to help women with legal support by matching them with legal services using our NLP based chatbot made with Google Dialogflow. This project was created in second edition of Banglalink SDG Hackathon ["Code for a Cause"](https://www.banglalink.net/en/about-us/media/press-release/code-for-a-cause) a 24-hour hackathon aimed at encouraging young problem solvers to come up with innovative solutions to socio-economic challenges related to Sustainable Development Goals (SDG).
 
